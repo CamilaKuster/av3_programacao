@@ -1,11 +1,13 @@
 from flask import Flask, jsonify 
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 import json 
 import os
 import datetime
 
 app = Flask(__name__)
-FLASK_APP = app
+CORS(app)
+
 
 path = os.path.dirname(os.path.abspath(__file__))
 arquivobd = os.path.join(path, 'clientes.db')
