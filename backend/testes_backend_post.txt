@@ -1,0 +1,7 @@
+$ curl -d '{"username":"Ca", "password":"1233556", "name":"Caio", "email":"caio@gmail.com", "cpf":"31245", "rg":"32567658", "celular":"3132526", "endereco":"rua blablabla"}' -X POST -H "Content-Type:application/json " localhost:5000/incluir_cliente 
+{
+  "detalhes": "ok", 
+  "resultado": "ok"
+}     
+
+$ curl -d '{"nome":"James Kirk", "telefone":"92212-1212", "email":"jakirk@gmail.com"}' -X POST -H "Content-Type:application/json" localhost:5000/incluir_pessoa
